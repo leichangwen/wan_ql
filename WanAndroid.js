@@ -42,7 +42,9 @@ async function login(username, password) {
 }
 
 async function allTasks() {
-    await login('leichangwen', '123456');
+    // 'your_username'  # 修改为你的用户名
+    // 'your_password'  # 修改为你的密码
+    await login('your_username', 'Your password');
 }
 
 allTasks();
