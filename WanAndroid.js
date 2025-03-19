@@ -1,3 +1,6 @@
+/*
+33 8,11 * * * WanAndroid.js
+*/
 const { sendNotify } = require('./sendNotify.js'); // commonjs
 
 async function login(username, password) {
