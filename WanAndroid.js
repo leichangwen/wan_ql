@@ -5,8 +5,6 @@
  */
 const { sendNotify } = require('./sendNotify.js'); // commonjs
 
-const $ = new Env("玩安卓登录");
-
 async function login(username, password) {
     console.log("============开始玩安卓登录请求============");
     const url = "https://www.wanandroid.com/user/login";
