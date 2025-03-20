@@ -1,5 +1,6 @@
 /*
-33 8,11 * * * WanAndroid.js
+玩安卓登录
+cron:33 7,11 * * * WanAndroid.js
 */
 const { sendNotify } = require('./sendNotify.js'); // commonjs
 
