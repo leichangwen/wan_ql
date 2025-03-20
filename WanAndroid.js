@@ -1,7 +1,8 @@
-/*
-玩安卓登录
-cron:33 7,11 * * * WanAndroid.js
-*/
+/**
+ * WanAndroid.js
+ * name: 玩安卓登录
+ * cron: 33 7,11 * * *
+ */
 const { sendNotify } = require('./sendNotify.js'); // commonjs
 
 const $ = new Env("玩安卓登录");
