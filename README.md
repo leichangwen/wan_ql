@@ -5,7 +5,7 @@
 
 
 ```
-ql repo https://github.com/leichangwen/wan_ql.git "" "backUp" "sendNotify"
+ql repo https://github.com/leichangwen/wan_ql.git "" "backUp" "sendNotify|utils"
 
 ```
 
