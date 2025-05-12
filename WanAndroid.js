@@ -47,9 +47,17 @@ async function login(username, password) {
 }
 
 async function allTasks() {
-    // 'your_username'  # 修改为你的用户名
-    // 'your_password'  # 修改为你的密码
-    await login('your_username', 'your_password');
+    // 从环境变量读取账号密码
+    const username = process.env.WANANDROID_USERNAME;
+    const password = process.env.WANANDROID_PASSWORD;
+
+    if (!username || !password) {
+        console.log("未配置WANANDROID_USERNAME或WANANDROID_PASSWORD环境变量");
+        await sendNotify("玩安卓登录", "错误：未配置账号密码环境变量");
+        return;
+    }
+
+    await login(username, password);
 }
 
 allTasks();
